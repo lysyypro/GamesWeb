@@ -1,182 +1,43 @@
-body {
-    margin: 0;
-    font-family: sans-serif;
-    font-size: 16px;
-    background-color: #090b14;
-    color: #f0f2ff;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  #wcag {
-    background-color: #141830;
-    border-bottom: 1px solid #222645;
-    padding: 6px 24px;
-    display: flex;
-    align-items: center;
-  }
-   
-  #wcag span {
-    font-size: 13px;
-    color: #7a80a8;
-  }
-   
-  #wcag a {
-    color: #f0f2ff;
-    text-decoration: none;
-    border: 1px solid #222645;
-    border-radius: 4px;
-    padding: 2px 10px;
-    background-color: #1a1f3d;
-  }
-   
-  #wcag a.maly{
-    font-size: 13px; 
-  }
-  #wcag a.sredni{ 
-    font-size: 16px; 
-  }
-  #wcag a.duzy{ 
-    font-size: 20px; 
-  }
-   
-  #wcag a:hover,
-  #wcag a.aktywny {
-    background-color: #7c3fa0;
-    border-color: #a455cc;
-  }
-  header {
-    background-color: #0e1224;
-    border-bottom: 2px solid #c0273a;
-    padding: 16px 24px;
-    display: flex;
-    align-items: center;
-  }
-   
-  #logo {
-    height: 60px;
-    width: auto;
-  }
-   
-  header h1 {
-    font-size: 26px;
-    font-weight: 800;
-    color: #f0f2ff;
-    flex: 1;
-    margin: 0;
-  }
-   
-  nav {
-    display: flex;
-  }
-   
-  nav a {
-    color: #7a80a8;
-    text-decoration: none;
-    font-size: 14px;
-    padding: 6px 14px;
-    border: 1px solid transparent;
-    border-radius: 6px;
-  }
-   
-  nav a:hover {
-    color: #f0f2ff;
-    border-color: #a455cc;
-    background-color: #1a1f3d;
-  }
-   
-  #logowanie {
-    color: #7a80a8;
-    display: flex;
-    align-items: center;
-    padding: 6px;
-    border: 1px solid transparent;
-    border-radius: 6px;
-  }
-   
-  #logowanie:hover {
-    color: #f0f2ff;
-    border-color: #a455cc;
-    background-color: #1a1f3d;
-  }
-  #srodek {
-    padding: 32px 24px;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    align-items: start;
-  }
-   
-  main h2 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    color: #f0f2ff;
-  }
-   
-  .gry {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
-   
-  .gra {
-    background-color: #0e1224;
-    border: 1px solid #222645;
-    border-radius: 8px;
-    padding: 20px 16px;
-    text-align: center;
-  }
-   
-  .gra:hover {
-    border-color: #c0273a;
-  }
-   
-  .gra h3 {
-    font-size: 15px;
-    margin-bottom: 6px;
-  }
-   
-  .gra p {
-    font-size: 13px;
-    color: #7a80a8;
-  }
-   
-  aside {
-    display: flex;
-    flex-direction: column;
-  }
-   
-  .etykieta {
-    font-size: 11px;
-    color: #7a80a8;
-    margin: 0;
-  }
-   
-  .reklama {
-    background-color: #141830;
-    border: 1px dashed #222645;
-    border-radius: 8px;
-    padding: 40px 16px;
-    text-align: center;
-    font-size: 13px;
-    color: #7a80a8;
-  }
-   
-  footer {
-    background-color: #0e1224;
-    border-top: 1px solid #222645;
-    padding: 20px 24px;
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    color: #7a80a8;
-  }
-   
-  footer a {
-    color: #e03350;
-    text-decoration: none;
-  }
-   
-  footer a:hover {
-    text-decoration: underline;
-  }
-   
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; background: #0a0c16; color: #eef0ff; min-height: 100vh; display: flex; flex-direction: column; }
+a { color: #a455cc; text-decoration: none; }
+
+header { background: #0f1226; border-bottom: 2px solid #c0273a; padding: 12px 20px; display: flex; align-items: center; gap: 14px; }
+#logo { height: 48px; }
+header h1 { font-size: 1.4rem; font-weight: 800; flex: 1; }
+nav a { color: #7279a0; font-size: .9rem; padding: 5px 12px; }
+.hbtns { display: flex; gap: 8px; }
+.hbtns a { font-size: .85rem; padding: 6px 14px; border: 1px solid #232748; border-radius: 6px; color: #eef0ff; }
+.hbtns a.reg { background: #c0273a; border-color: #c0273a; }
+.userinfo { font-size: .85rem; color: #7279a0; display: flex; align-items: center; gap: 10px; }
+.userinfo strong { color: #eef0ff; }
+.userinfo a { color: #7279a0; border: 1px solid #232748; padding: 4px 10px; border-radius: 5px; }
+
+#wrap { width: 100%; max-width: 1200px; margin: 0 auto; padding: 28px 20px; display: grid; grid-template-columns: 1fr 220px; gap: 28px; align-items: start; flex: 1; }
+main { width: 100%; min-width: 0; }
+h2 { font-size: 1.2rem; margin-bottom: 16px; }
+.gry { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.gra { background: #0f1226; border: 1px solid #232748; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
+.gra:hover { border-color: #c0273a; }
+.okl { width: 100%; aspect-ratio: 16/9; background: linear-gradient(135deg, var(--ac, #c0273a), #000); }
+.gi { padding: 10px 12px 12px; position: relative; }
+.gi h3 { font-size: .85rem; font-weight: 700; margin-bottom: 3px; }
+.gi p { font-size: .75rem; color: #7279a0; }
+.score { position: absolute; top: -12px; right: 10px; background: #c0273a; color: #fff; font-size: .7rem; font-weight: 800; padding: 2px 7px; border-radius: 20px; }
+
+aside { display: flex; flex-direction: column; gap: 10px; }
+.rek { background: #161a30; border: 1px dashed #232748; border-radius: 6px; padding: 36px 12px; text-align: center; font-size: .8rem; color: #7279a0; }
+
+.auth-page { flex: 1; display: flex; align-items: center; justify-content: center; }
+.auth-box { background: #0f1226; border: 1px solid #232748; border-radius: 10px; padding: 32px 28px; width: 100%; max-width: 360px; }
+.auth-box h2 { font-size: 1.2rem; margin-bottom: 22px; }
+.fg { display: flex; flex-direction: column; gap: 4px; margin-bottom: 14px; }
+.fg label { font-size: .8rem; color: #7279a0; }
+.fg input { background: #161a30; border: 1px solid #232748; border-radius: 6px; padding: 8px 11px; color: #eef0ff; font-size: .875rem; width: 100%; }
+.fg input:focus { outline: none; border-color: #a455cc; }
+.btn { width: 100%; padding: 9px; background: #c0273a; color: #fff; border: none; border-radius: 7px; font-size: .9rem; font-weight: 700; cursor: pointer; margin-top: 4px; }
+.err { color: #f07080; font-size: .85rem; margin-bottom: 14px; }
+.ok  { color: #60c070; font-size: .85rem; margin-bottom: 14px; }
+.switch { text-align: center; font-size: .85rem; color: #7279a0; margin-top: 16px; }
+
+footer { background: #0f1226; border-top: 1px solid #232748; padding: 14px 20px; font-size: .85rem; color: #7279a0; margin-top: auto; }
