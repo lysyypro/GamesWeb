@@ -16,7 +16,6 @@ $cast = mysqli_fetch_all(mysqli_query($conn, "
     JOIN Performers p  ON ca.performer_id = p.id
     WHERE ch.title_id = 3
 "), MYSQLI_ASSOC);
-$flash = '';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete_comment_id']) && isset($_SESSION['user_id'])) {
     $cid = (int)$_POST['delete_comment_id'];

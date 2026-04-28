@@ -18,9 +18,6 @@ $cast = mysqli_fetch_all(mysqli_query($conn, "
     WHERE ch.title_id = 7
 "), MYSQLI_ASSOC);
 
-$flash = '';
-
-// Usuwanie komentarza
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete_comment_id']) && isset($_SESSION['user_id'])) {
     $cid = (int)$_POST['delete_comment_id'];
     $uid = (int)$_SESSION['user_id'];

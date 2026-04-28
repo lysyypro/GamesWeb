@@ -450,7 +450,6 @@ footer {
   padding: 2px 6px;
   border-radius: 4px;
   color: var(--muted);
-  transition: color .15s, background .15s;
   margin-left: auto;
 }
 .c-delete:hover { color: #f07080; background: rgba(240,112,128,.1); }
